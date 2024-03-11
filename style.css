@@ -84,3 +84,30 @@ p{
 .container-button{
     text-align: center;
 }
+
+.chanel{
+      background-color: rgb(21, 32, 151);
+    padding: 1em;
+    font-weight: 600;
+    color: white;
+    border: 10px solid var(--clr-light);
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.chanelw{
+      background-color: rgb(21, 32, 151);
+    padding: 1em;
+    font-weight: 600;
+    color: white;
+    border: 10px solid var(--clr-light);
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.chanele{
+      background-color: rgb(21, 32, 151);
+    padding: 1em;
+    font-weight: 600;
+    color: white;
+    border: 10px solid var(--clr-light);
+    border-radius: 15px;
+}
