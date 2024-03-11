@@ -41,7 +41,7 @@ p{
 
 .grid-container {
     width: 96%;
-    height: 200px;
+    height: 180px;
     display: flex;
     justify-content: space-around;
 }
