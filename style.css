@@ -41,7 +41,7 @@ p{
 
 .grid-container {
     width: 96%;
-    height: auto;
+    height: 300px;
     display: flex;
     justify-content: space-around;
 }
@@ -93,21 +93,24 @@ p{
     border-radius: 15px;
     margin-right: 10px;
      margin-left: 10px;
+      text-decoration: none;
 }
 .chanelw{
  background: linear-gradient(to right, hsl(0, 89%, 56%), hsl(192, 92%, 35%));
-    padding: 2em;
+    padding: 1em;
     font-weight: 600;
     color: white;
     border: 10px solid var(--clr-light);
     border-radius: 15px;
     margin-right: 10px;
+      text-decoration: none;
 }
 .chanele{
       background: linear-gradient(to right, hsl(0, 89%, 56%), hsl(192, 92%, 35%));
-    padding: 2em;
+    padding: 1em;
     font-weight: 600;
     color: white;
     border: 10px solid var(--clr-light);
     border-radius: 15px;
+      text-decoration: none;
 }
