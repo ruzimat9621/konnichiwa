@@ -1,116 +1,211 @@
-body{
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 55px;
-    background-image: url('back.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -2;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
+	font-weight: normal;
 }
 
-.sakura{
-    background-image: url('https://media.tenor.com/bx7hbOEm4gMAAAAi/sakura-leaves.gif');
-    top: -50px;
-    z-index: -1;
+body {
+	min-width: 320px;
+	max-width: 100%;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	margin-top: 55px;
+	background-image: url('back.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: -2;
 }
 
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+.sakura {
+	background-image: url('https://media.tenor.com/bx7hbOEm4gMAAAAi/sakura-leaves.gif');
+	top: -50px;
+	z-index: -1;
 }
 
-table{
-    width: 100%;
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
 }
 
-h1{
-    text-align: center;
-    background: linear-gradient(to right, hsl(0, 89%, 56%), hsl(192, 92%, 35%)); /* Градиентный фон */
-    color: #f7f5f4; /* Цвет текста */
-    border-radius: 30px;
+table {
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	background: linear-gradient(
+		to right,
+		hsl(0, 89%, 56%),
+		hsl(192, 92%, 35%)
+	); /* Градиентный фон */
+	color: #f7f5f4; /* Цвет текста */
+	border-radius: 30px;
 }
 
 h2 {
-    text-align: center;
+	text-align: center;
 }
 
-p{
-    text-decoration: none;
+p {
+	text-align: center;
+	text-decoration: none;
+	color: aliceblue;
 }
 
-.grid-container {
-    width: 96%;
-    height: 150px;
-    display: flex;
-    justify-content: space-around;
+.container {
+	justify-content: space-between;
+	display: flex;
+	gap: 20px; /* Отступ между карточками */
+	text-decoration: none;
 }
 
 .rasm {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
 }
 
-.logo-telegram{
-    width: 16px;
-    height: 16px;
+.logocard {
+	width: 16px;
+	height: 16px;
 }
 
-.users{
-    width: 16px;
-    height: 16px;
+.buttonb {
+	text-decoration: none;
+	background: linear-gradient(
+		to right,
+		hsl(0, 89%, 56%),
+		hsl(192, 92%, 35%)
+	); /* Градиентный фон */
+	color: #f7f5f4; /* Цвет текста */
+	border: none; /* Убираем границу */
+	padding: 10px 20px; /* Отступы внутри кнопки */
+	font-size: 16px; /* Размер шрифта */
+	cursor: pointer; /* Изменяем курсор при наведении */
+	border-radius: 8px;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.vipp{
-    width: 16px;
-    height: 16px;
+.container-button {
+	text-align: center;
 }
 
-.buttonb{
-    text-decoration: none;
-    background: linear-gradient(to right, hsl(0, 89%, 56%), hsl(192, 92%, 35%)); /* Градиентный фон */
-    color: #f7f5f4; /* Цвет текста */
-    border: none; /* Убираем границу */
-    padding: 10px 20px; /* Отступы внутри кнопки */
-    font-size: 16px; /* Размер шрифта */
-    cursor: pointer; /* Изменяем курсор при наведении */
-    border-radius: 8px;
-    margin: 0 auto;
-    text-align: center;
+.card {
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(to right, hsl(0, 89%, 56%), hsl(192, 92%, 35%));
+	font-weight: 600;
+	color: white;
+	border: 10px solid var(--clr-light);
+	border-radius: 15px;
+	text-decoration: none;
+	margin-bottom: 25px;
 }
 
-.container-button{
-    text-align: center;
+/* JLPTN5 STRANITSA */
+.heading {
+	color: #444;
+	font-size: 40px;
+	text-align: center;
+	padding: 10px;
 }
 
-.chanel{
- background: linear-gradient(to right, hsl(0, 89%, 56%), hsl(192, 92%, 35%));
-    padding: 1em;
-    font-weight: 600;
-    color: white;
-    border: 10px solid var(--clr-light);
-    border-radius: 15px;
-    margin-right: 10px;
-     margin-left: 10px;
-      text-decoration: none;
+.videoconteiner {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 15px;
+	align-items: flex-start;
+	padding: 5px 5%;
 }
-.chanelw{
- background: linear-gradient(to right, hsl(0, 89%, 56%), hsl(192, 92%, 35%));
-    padding: 1em;
-    font-weight: 600;
-    color: white;
-    border: 10px solid var(--clr-light);
-    border-radius: 15px;
-    margin-right: 10px;
-      text-decoration: none;
+
+.videoconteiner .main-video {
+	background: #fff;
+	border-radius: 10px;
+	padding: 10px;
 }
-.chanele{
-      background: linear-gradient(to right, hsl(0, 89%, 56%), hsl(192, 92%, 35%));
-    padding: 1em;
-    font-weight: 600;
-    color: white;
-    border: 10px solid var(--clr-light);
-    border-radius: 15px;
-      text-decoration: none;
+
+.videoconteiner .main-video video {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.videoconteiner .main-video video .title {
+	color: #333;
+	font-size: 23px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.videoconteiner .video-list {
+	background: #fff;
+	border-radius: 5px;
+	height: 520px;
+	overflow-y: scroll;
+}
+
+.videoconteiner .video-list::-webkit-scrollbar {
+	width: 7px;
+}
+
+.videoconteiner .video-list::-webkit-scrollbar-track {
+	background: #ccc;
+	border-radius: 50px;
+}
+
+.videoconteiner .video-list::-webkit-scrollbar-thumb {
+	background: #666;
+	border-radius: 50px;
+}
+
+.videoconteiner .video-list .vid video {
+	width: 100px;
+	border-radius: 5px;
+}
+
+.videoconteiner .video-list .vid video {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	background: #f7f7f7;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.videoconteiner .video-list .vid:hover {
+	background: #eee;
+}
+
+.videoconteiner .video-list .vid.active {
+	background: #2980b9;
+}
+
+.videoconteiner .video-list .vid.active .title {
+	color: #fff;
+}
+
+.videoconteiner .video-list .vid .title {
+	color: #333;
+	font-size: 17px;
+}
+
+@media (max-width: 991px) {
+	.videoconteiner {
+		grid-template-columns: 1.5fr 1fr;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.videoconteiner {
+		grid-template-columns: 1fr;
+	}
 }
